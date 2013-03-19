@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:py="http://genshi.edgewall.org/">
+	<head>
+		<title>$title</title>
+	</head>
+	<body>
+		<h1>Generated barcodes($date)</h1>
+		<table>
+			<tr py:for="img in (images)">
+				<td><img style="width: 200px; height: 90px;" src="${img}" /></td>
+			</tr>
+		</table>
+	</body>
+</html>
