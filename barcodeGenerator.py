@@ -18,6 +18,9 @@ if __name__ == '__main__':
 
 	files = []	
 
+	if not os.path.exists('output'):
+    		os.makedirs('output')
+
 	f = open('eancodes.txt')
 	for l in f.readlines():
 		l = l.strip()
